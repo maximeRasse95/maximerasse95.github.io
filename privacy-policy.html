@@ -6,140 +6,89 @@
 <title>Politique de confidentialité — JellyFill</title>
 <style>
   :root { color-scheme: light dark; }
-  body {
-    margin: 0 auto; max-width: 720px; padding: 32px 20px 64px;
+  body { margin: 0 auto; max-width: 720px; padding: 32px 20px 64px;
     font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #1f2328; background: #ffffff;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e6e6e6; background: #14171a; }
-    a { color: #7db4ff; }
-  }
-  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+    color: #1f2328; background: #ffffff; }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #14171a; } a { color: #7db4ff; } }
+  h1 { font-size: 1.6rem; margin: 2rem 0 4px; }
   h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
-  h3 { font-size: 1.02rem; margin: 1.2rem 0 .3rem; }
-  .updated { color: #6a737d; font-size: .9rem; margin-bottom: 1.5rem; }
+  em { color: #6a737d; }
   hr { border: 0; border-top: 1px solid #d0d7de; margin: 2.5rem 0; }
   ul { padding-left: 1.3em; }
   code { background: rgba(127,127,127,.15); padding: 0 .3em; border-radius: 4px; }
 </style>
 </head>
 <body>
-
 <h1>Politique de confidentialité — JellyFill</h1>
-<p class="updated">Dernière mise à jour : 9 septembre 2026</p>
-
-<p>JellyFill (« l'application », « le jeu ») est édité par <strong>Maxime Rasse</strong>
-(« nous »). Contact : <a href="mailto:maxime.rasse95@gmail.com">maxime.rasse95@gmail.com</a>.</p>
-
-<p>Cette politique explique quelles données sont traitées lorsque vous utilisez
-JellyFill, et pourquoi.</p>
-
+<p><em>Dernière mise à jour : 25 octobre 2026</em></p>
+<p>JellyFill (« l'application », « le jeu ») est édité par <strong>RASSE Maxime</strong> (« nous »). Contact : <strong><a href="mailto:maxime.rasse95@gmail.com">maxime.rasse95@gmail.com</a></strong>.</p>
+<p>Cette politique explique quelles données sont traitées lorsque vous utilisez JellyFill, pourquoi, et comment les supprimer.</p>
 <h2>1. Ce que nous ne demandons pas</h2>
-<p>Nous ne vous demandons ni nom, ni adresse e‑mail, ni numéro de téléphone, et
-vous n'avez pas de compte à créer. Votre progression, votre monnaie du jeu
-(« sucre ») et vos réglages sont d'abord stockés <strong>sur votre appareil</strong>.
-Une sauvegarde dans le cloud (voir 2‑d) permet de retrouver votre progression
-après une réinstallation ; elle repose sur un identifiant aléatoire anonyme, non
-relié à votre identité.</p>
-
-<h2>2. Données traitées par des services tiers</h2>
-
-<h3>a) Publicité — Google AdMob</h3>
-<p>L'application affiche des publicités via <strong>Google AdMob</strong>. Pour
-fournir et mesurer ces publicités, le SDK AdMob peut traiter :</p>
+<p>Aucune inscription : ni nom, ni adresse e-mail, ni numéro de téléphone, ni photo, ni contacts, ni localisation précise.</p>
+<h2>2. Données liées à votre progression (Firebase)</h2>
+<p>Pour sauvegarder votre progression et faire fonctionner le classement, le jeu utilise <strong>Google Firebase</strong> :</p>
 <ul>
-  <li>l'identifiant publicitaire de l'appareil (Advertising ID / IDFA) ;</li>
-  <li>des données techniques : type d'appareil, système d'exploitation, langue,
-  adresse IP approximative, interactions avec les annonces.</li>
+<li><strong>Firebase Authentication (connexion anonyme)</strong> : un identifiant technique aléatoire est créé pour votre appareil. Il n'est lié à aucune identité réelle.</li>
+<li><strong>Cloud Firestore</strong> : stocke, sous cet identifiant, votre sauvegarde (niveau atteint, étoiles, sucre, skins possédés, réglages de cosmétiques, séries de connexion) afin de la retrouver si vous changez d'appareil.</li>
+<li><strong>Classement (facultatif)</strong> : si vous choisissez un <strong>pseudo</strong>, votre pseudo, votre niveau et votre nombre de victoires de la semaine sont **visibles par les autres joueurs**. Un filtre bloque les pseudos inappropriés. N'utilisez pas votre vrai nom. Vous pouvez quitter le classement à tout moment (pseudo effacé).</li>
+<li><strong>Parrainage (facultatif)</strong> : un code d'invitation est associé à votre identifiant technique ; lorsqu'un ami saisit votre code, un enregistrement relie les deux identifiants pour créditer la récompense.</li>
+<li><strong>Retours (facultatif)</strong> : si vous attribuez 1 ou 2 étoiles et écrivez un message, ce message (400 caractères max.), la note, le niveau atteint et la version de l'application nous sont envoyés. Ne mettez pas d'information personnelle dans ce message.</li>
 </ul>
-<p>Dans l'Espace économique européen, au Royaume‑Uni et en Suisse, un écran de
-consentement (Google User Messaging Platform) vous est présenté avant tout
-chargement de publicité. Vous pouvez accepter les publicités personnalisées,
-les refuser (publicités non personnalisées), et revenir sur votre choix à tout
-moment depuis l'écran <strong>Réglages → Confidentialité</strong>.</p>
-<p>Informations Google :</p>
+<h2>3. Mesure d'audience et plantages</h2>
 <ul>
-  <li><a href="https://policies.google.com/privacy">Politique de confidentialité Google</a></li>
-  <li><a href="https://policies.google.com/technologies/partner-sites">Comment Google utilise les données</a></li>
+<li><strong>Firebase Analytics</strong> : événements d'usage anonymes (niveau commencé ou terminé, durée, outils utilisés, publicités vues, achats, écrans ouverts) pour améliorer le jeu. Données techniques : modèle d'appareil, version d'Android, langue, pays approximatif, identifiant d'instance d'application.</li>
+<li><strong>Firebase Crashlytics</strong> : rapports de plantage (type d'erreur, état de l'appareil) pour corriger les bugs.</li>
 </ul>
-
-<h3>b) Achats intégrés — Google Play Billing</h3>
-<p>Les achats (retrait des publicités, packs de sucre, tirelire) sont traités par
-<strong>Google Play</strong>. Nous ne recevons ni ne stockons vos informations
-de paiement. Google nous transmet uniquement la confirmation qu'un achat a eu
-lieu, afin de débloquer le contenu correspondant sur votre appareil.</p>
-
-<h3>c) Mesure d'audience et stabilité — Firebase</h3>
-<p>Nous utilisons <strong>Firebase</strong> (Google) pour comprendre l'usage du
-jeu et corriger les bugs :</p>
+<h2>4. Publicité</h2>
+<p>L'application affiche des publicités via <strong>Google AdMob</strong> et ses partenaires de médiation (par exemple <strong>Unity Ads</strong>). Pour fournir et mesurer ces annonces, ces services peuvent traiter :</p>
 <ul>
-  <li><strong>Analytics</strong> : événements de jeu agrégés (niveau démarré /
-  terminé, ouverture de la boutique…), modèle d'appareil, système, langue,
-  identifiants techniques Firebase ;</li>
-  <li><strong>Crashlytics</strong> : rapports de plantage (trace technique,
-  état de l'appareil au moment du crash) ;</li>
+<li>l'identifiant publicitaire de l'appareil (Advertising ID) ;</li>
+<li>des données techniques : appareil, système, langue, adresse IP approximative, interactions avec les annonces.</li>
 </ul>
-<p>Ces données ne sont pas utilisées pour vous identifier ni revendues.</p>
-
-<h3>d) Sauvegarde cloud — Firebase Authentication (anonyme) + Cloud Firestore</h3>
-<p>Si les services sont disponibles, votre progression (niveau atteint, sucre,
-cosmétiques débloqués, étoiles, réglages liés au compte) est enregistrée chez
-<strong>Google Cloud Firestore</strong>, associée à un identifiant
-<strong>anonyme</strong> généré automatiquement. Aucune donnée personnelle n'y
-est jointe. Le jeu reste entièrement jouable hors ligne si ces services sont
-indisponibles.</p>
-
-<h2>3. Enfants</h2>
-<p>JellyFill n'est pas destiné en priorité aux enfants de moins de 13 ans et ne
-leur demande aucune donnée personnelle. Si l'application est publiée dans un
-programme « Familles », les publicités sont configurées en mode non personnalisé
-/ adapté aux familles.</p>
-
-<h2>4. Vos droits (RGPD)</h2>
-<p>Vous pouvez à tout moment :</p>
+<p>Dans l'Espace économique européen, au Royaume-Uni et en Suisse, un écran de consentement (<strong>Google User Messaging Platform</strong>) s'affiche avant toute publicité. Vous pouvez refuser les annonces personnalisées et modifier votre choix à tout moment dans <strong>Réglages → Consentement publicitaire</strong>.</p>
+<p>Informations des éditeurs :</p>
 <ul>
-  <li>modifier votre consentement publicitaire (Réglages → Confidentialité) ;</li>
-  <li>réinitialiser votre identifiant publicitaire depuis les réglages Android ;</li>
-  <li>désinstaller l'application, ce qui supprime toutes les données locales ;</li>
-  <li>nous contacter à <a href="mailto:maxime.rasse95@gmail.com">maxime.rasse95@gmail.com</a>
-  pour toute question relative à vos données.</li>
+<li>Google : <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li>Unity : <a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></li>
 </ul>
-
-Classement (facultatif) : si vous choisissez un pseudo, celui-ci et votre niveau sont visibles par les autres joueurs. Vous pouvez quitter le classement à tout moment depuis l'écran Classement, ce qui supprime vos données publiées.
-
-<h2>5. Suppression de vos données</h2>
+<p>Un achat unique (« Sans pub ») supprime les publicités entre les niveaux. Les vidéos récompensées restent facultatives.</p>
+<h2>5. Achats intégrés</h2>
+<p>Les achats sont traités par <strong>Google Play</strong>. Nous ne recevons ni ne stockons vos informations de paiement ; Google nous indique seulement qu'un achat a eu lieu.</p>
+<h2>6. Notifications</h2>
+<p>Les rappels (cadeau du jour, défi, événements, série) sont des <strong>notifications locales</strong> programmées sur votre appareil : aucun serveur n'est utilisé. Vous pouvez les désactiver dans <strong>Réglages → Rappels</strong>.</p>
+<h2>7. Durée de conservation et suppression de vos données</h2>
 <ul>
-  <li><strong>Dans le jeu</strong> : <em>Réglages → Réinitialiser la
-  progression</em> efface votre progression locale et remet à zéro la sauvegarde
-  cloud associée à votre identifiant anonyme.</li>
-  <li><strong>Désinstaller</strong> l'application supprime toutes les données
-  stockées sur l'appareil.</li>
-  <li><strong>Sur demande</strong> : écrivez à
-  <a href="mailto:maxime.rasse95@gmail.com">maxime.rasse95@gmail.com</a> en
-  indiquant que vous souhaitez la suppression de vos données. Nous supprimons
-  l'enregistrement de sauvegarde cloud correspondant et demandons la purge des
-  données de diagnostic sous 30 jours. L'identifiant publicitaire se réinitialise
-  depuis les réglages Android.</li>
+<li><strong>Dans l'application</strong> : <strong>Réglages → Confidentialité → Supprimer mes données</strong> efface votre sauvegarde cloud, votre pseudo, vos entrées de classement, vos données de parrainage, votre identifiant anonyme et vos données locales. L'achat « Sans pub » reste restaurable via votre compte Google Play.</li>
+<li><strong>Par e-mail</strong> : écrivez à <strong><a href="mailto:maxime.rasse95@gmail.com">maxime.rasse95@gmail.com</a></strong> en indiquant le code d'invitation ou le pseudo de votre profil ; nous supprimons les données associées sous 30 jours.</li>
+<li>Les entrées du classement hebdomadaire sont supprimées automatiquement à la suppression du compte. Les statistiques d'audience sont agrégées et ne permettent pas de vous identifier.</li>
+<li>Désinstaller l'application supprime les données locales ; les données cloud restent jusqu'à suppression comme ci-dessus.</li>
 </ul>
-
-<h2>6. Modifications</h2>
-<p>Cette politique peut être mise à jour ; la version en vigueur est celle
-publiée à l'URL communiquée sur la fiche Google Play.</p>
-
+<h2>8. Enfants</h2>
+<p>JellyFill n'est pas destiné aux enfants de moins de 13 ans et ne leur demande aucune donnée personnelle. Si vous pensez qu'un enfant nous a transmis des données, contactez-nous pour les supprimer.</p>
+<h2>9. Vos droits (RGPD)</h2>
+<p>Vous pouvez demander l'accès, la rectification, l'effacement, la limitation ou la portabilité de vos données, et vous opposer à leur traitement, en nous écrivant à <strong><a href="mailto:maxime.rasse95@gmail.com">maxime.rasse95@gmail.com</a></strong>. Vous pouvez aussi saisir votre autorité de protection des données (en France : la CNIL, www.cnil.fr).</p>
+<p>Base légale : exécution du service demandé (sauvegarde, classement), intérêt légitime (statistiques, plantages, sécurité) et consentement (publicités personnalisées, notifications).</p>
+<p>Transferts hors UE : certains services (Google, Unity) peuvent traiter des données hors de l'Union européenne, avec les garanties prévues par leurs conditions.</p>
+<h2>10. Modifications</h2>
+<p>Cette politique peut évoluer ; la version en vigueur est celle publiée à l'adresse indiquée sur la fiche Google Play.</p>
 <hr>
-
-<h2>English summary</h2>
-<p>JellyFill does not require an account and stores your progress mainly on your
-device, with an optional anonymous cloud backup (Firebase). It shows ads through
-<strong>Google AdMob</strong>, which may process your device advertising ID,
-approximate location and technical data; a consent screen is shown in the
-EEA/UK/CH and your choice can be changed in <strong>Settings → Privacy</strong>.
-We use <strong>Firebase Analytics</strong> and <strong>Crashlytics</strong> for
-aggregated usage stats and crash reports. In‑app purchases are handled by
-<strong>Google Play Billing</strong>; we never receive your payment details.
-To request deletion of your data, contact
-<a href="mailto:maxime.rasse95@gmail.com">maxime.rasse95@gmail.com</a>.</p>
-
+<h1>Privacy Policy — JellyFill (English)</h1>
+<p><em>Last updated: October 25, 2026</em></p>
+<p>JellyFill is published by <strong>RASSE Maxime</strong> ("we"). Contact: <strong><a href="mailto:maxime.rasse95@gmail.com">maxime.rasse95@gmail.com</a></strong>.</p>
+<p><strong>What we do not ask for:</strong> no sign-up, name, email, phone number, photos, contacts or precise location.</p>
+<p><strong>Progress and rankings (Google Firebase).</strong> The game creates a random <strong>anonymous ID</strong> (Firebase Authentication) and stores your save under it in <strong>Cloud Firestore</strong>: level, stars, sugar, owned skins, cosmetic settings and login streaks, so you can restore it on another device.</p>
+<ul>
+<li><strong>Leaderboard (optional):</strong> if you choose a <strong>nickname</strong>, your nickname, level and weekly wins are <strong>visible to other players</strong>. Do not use your real name. You can leave the leaderboard at any time.</li>
+<li><strong>Referral (optional):</strong> an invite code is linked to your anonymous ID so both players can receive their reward.</li>
+<li><strong>Feedback (optional):</strong> if you give 1–2 stars and write a message, we receive the message (max. 400 characters), your rating, your level and the app version. Do not include personal information.</li>
+</ul>
+<p><strong>Analytics and crashes.</strong> Firebase Analytics collects anonymous usage events (levels, tools, ads watched, purchases, screens opened); Firebase Crashlytics collects crash reports (error type, device state).</p>
+<p><strong>Advertising.</strong> Ads are served by <strong>Google AdMob</strong> and mediation partners (for example <strong>Unity Ads</strong>), which may process the advertising ID, device technical data, approximate IP address and ad interactions. In the EEA/UK/CH a consent screen (Google UMP) is shown first; change your choice in <strong>Settings → Ad consent</strong>. A one-time purchase removes ads between levels; rewarded videos are optional.</p>
+<p><strong>Purchases.</strong> Handled by <strong>Google Play</strong>; we never receive payment details.</p>
+<p><strong>Notifications.</strong> Reminders are local notifications scheduled on your device (no server). Turn them off in <strong>Settings → Reminders</strong>.</p>
+<p><strong>Deleting your data.</strong> In the app: <strong>Settings → Privacy → Delete my data</strong> erases your cloud save, nickname, leaderboard entries, referral data, anonymous ID and local data (the "No ads" purchase can be restored via Google Play). Or email <strong><a href="mailto:maxime.rasse95@gmail.com">maxime.rasse95@gmail.com</a></strong> with your invite code or nickname; we delete the associated data within 30 days.</p>
+<p><strong>Children.</strong> JellyFill is not directed to children under 13.</p>
+<p><strong>Your rights (GDPR).</strong> You may request access, rectification, erasure, restriction, portability, and object to processing by contacting us. You may also lodge a complaint with your data protection authority.</p>
+<p><strong>Changes.</strong> The current version is the one published at the URL given on the Google Play listing.</p>
 </body>
 </html>
